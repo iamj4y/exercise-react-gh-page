@@ -1,7 +1,7 @@
 {
   "name": "exercise-app",
   "version": "0.1.0",
-  "homepage": "https://iamj4y.github.io/exercise-react-gh-page",
+  "homepage": "https://iamj4y.github.io/exercise-react-gh-page/",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
