@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/exercise-react-gh-page/static/css/main.f855e6bc.css",
-    "main.js": "/exercise-react-gh-page/static/js/main.e49bba6a.js",
+    "main.js": "/exercise-react-gh-page/static/js/main.d0a774a8.js",
     "index.html": "/exercise-react-gh-page/index.html",
     "main.f855e6bc.css.map": "/exercise-react-gh-page/static/css/main.f855e6bc.css.map",
-    "main.e49bba6a.js.map": "/exercise-react-gh-page/static/js/main.e49bba6a.js.map"
+    "main.d0a774a8.js.map": "/exercise-react-gh-page/static/js/main.d0a774a8.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.e49bba6a.js"
+    "static/js/main.d0a774a8.js"
   ]
 }
