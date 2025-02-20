@@ -5,18 +5,18 @@ import {App} from './App';
 import {RepExercise} from './App'
 import {DurExercise} from './App'
 import {RunExercise} from './App'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <Router>
     <Routes>
       <Route path="/" element={<App/>}/>
       <Route path= "/Repetition/:name" element={<RepExercise/>}/>
       <Route path= "/Duration/:name" element={<DurExercise/>}/>
       <Route path= "/Running" element={<RunExercise/>}/>
     </Routes>
-  </BrowserRouter>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -2,9 +2,10 @@
 //
 
 import { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function DurationInterface(props) {
-
+    const navigate = useNavigate();
     const [time, setTimer] = useState(0);  //stores time to increment/reset
     const [status, isActive] = useState("inactive"); //determines whether timer should be inactive or not (connected to Start/Reset button)
     const [label, chgLabel] = useState("Start"); //visually changes the Start/Reset button (the label. it changes the label.)
@@ -41,7 +42,7 @@ function DurationInterface(props) {
            <button onClick={timerToggle}>
             {label}
            </button>
-           <button onClick={()=> window.location.href = "/"}>Return</button>  
+           <button onClick={()=> navigate("/")}>Return</button>  
         </div>         
     );
 }

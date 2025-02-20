@@ -1,9 +1,11 @@
 //reference(s): https://medium.com/how-to-react/simple-way-to-create-a-stopwatch-in-react-js-bcc0e08e041e
 
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 function RunningInterface() {
 
+    const navigate = useNavigate();
     const [time, setTimer] = useState(0);  //stores time to increment/reset
     const [timeList, setTimeList] = useState([]);
     const [status, isActive] = useState("inactive"); //determines whether timer should be inactive or not (connected to Start/Reset button)
@@ -52,7 +54,7 @@ function RunningInterface() {
             {label}
            </button>
            <button onClick={lapLogger}>Lap</button>
-           <button onClick={()=> window.location.href = "/"}>Return</button>  
+           <button onClick={()=> navigate("/")}>Return</button>  
            <div className='lapList'>
             <ul>
                 {timeList.map((item, i) => (
