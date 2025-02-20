@@ -2,6 +2,7 @@ import './App.css';
 import { useParams } from 'react-router-dom';
 import RepetitionInterface from './components/RepetitionExercise';
 import DurationInterface from './components/DurationExercise';
+import RunningInterface from './components/RunningExercise';
 
 
 export function DurExercise() {
@@ -19,6 +20,13 @@ export function RepExercise() {
     )
 }
 
+export function RunExercise() {
+    const {name} = useParams();
+      return (
+        <RunningInterface exercise={name}/>
+      )
+}
+
 export function App() {
   return (
     <div className="App">
@@ -32,7 +40,7 @@ export function App() {
         <br></br>
         <button onClick={()=> window.location.href = "/Repetition/Jumping Jacks"}>Jumping Jacks</button>
         <br></br>
-        <button onClick={()=> window.location.href = "/Duration/Running"}>Running</button>
+        <button onClick={()=> window.location.href = "/Running"}>Running</button>
         <br></br>
         <button onClick={()=> window.location.href = "/Repetition/Situps"}>Situps</button>
       </div>
