@@ -38,8 +38,8 @@ function RunningInterface() {
 
     const lapLogger = () => {
         if (status === "active") {
-            var item = min.toString().padStart(2, "0") + ":" + sec.toString().padStart(2, "0");
-            setTimeList([...timeList, item]);
+            var item = min.toString().padStart(2, "0") + ":" + sec.toString().padStart(2, "0"); //take the current time and assign it to var "item"
+            setTimeList([...timeList, item]); //push it to the back of the timeList array
         }
     }
 
@@ -56,7 +56,7 @@ function RunningInterface() {
            <div className='lapList'>
             <ul>
                 {timeList.map((item, i) => (
-                    <li key={i}> Lap {i+1} : <strong>{item}</strong></li>
+                    <li key={i}> Lap {i+1} : <strong>{item}</strong></li> //for all elements in the timeList array, make them list items and add them to the unordered list.
                 ))}
             </ul>
            </div>

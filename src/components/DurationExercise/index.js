@@ -1,4 +1,5 @@
-//reference(s): https://medium.com/how-to-react/simple-way-to-create-a-stopwatch-in-react-js-bcc0e08e041e
+//reference(s): https://medium.com/how-to-react/simple-way-to-create-a-stopwatch-in-react-js-bcc0e08e041e\
+//
 
 import { useState, useEffect } from 'react';
 

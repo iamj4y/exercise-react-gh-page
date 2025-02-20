@@ -8,7 +8,7 @@ function RepetitionInterface(props) {
            <h1>{props.exercise}</h1>  {/*This takes the path parameter and places it into a header*/}
            <h3>Reps: {reps}</h3>
            <button onClick={() => repCounter(reps + 1)}>Complete Rep</button> {/*This button */}
-           <button onClick={() => repCounter(0)}>Reset</button>
+           <button onClick={() => repCounter(0)}>Reset</button> {/*Sets the counter back to 0 */}
            <button onClick={() => window.location.href = "/"}>Return</button>
         </div>         
     );
